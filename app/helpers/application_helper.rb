@@ -7,4 +7,10 @@ module ApplicationHelper
 			"#{pre_site_title} | #{base_title} | #{post_site_title}"
 		end
 	end
+
+	#path should begin with / to indicate top of website directory
+	def site_url(path)
+		base_url = "http://fullridecentral.com"
+		"#{base_url}#{path}"
+	end
 end
