@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140122013556) do
+ActiveRecord::Schema.define(version: 20140122023913) do
 
   create_table "requirements", force: true do |t|
     t.string   "text"
@@ -28,6 +28,19 @@ ActiveRecord::Schema.define(version: 20140122013556) do
     t.string   "shp_type"
     t.integer  "shp_amount"
     t.string   "shp_requirements"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "first_name"
+    t.string   "middle_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.integer  "act_score"
+    t.integer  "sat_score"
+    t.float    "hs_gpa"
+    t.integer  "min_tuition_considering"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
