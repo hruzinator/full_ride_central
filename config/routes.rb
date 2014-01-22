@@ -1,4 +1,18 @@
 FullRideCentral::Application.routes.draw do
+
+  get "pages/about"
+  get "pages/contact"
+  get "pages/home"
+  get "pages/profile"
+  get "pages/scholarships"
+  get "page_controller/about"
+  get "page_controller/contact"
+  get "page_controller/home"
+  get "page_controller/main"
+  get "page_controller/profile"
+  get "page_controller/scholarships"
+  root 'pages#home'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
