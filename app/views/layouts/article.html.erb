@@ -1,8 +1,6 @@
-<% provide(:title, 'My Profile | Full Ride Central') %>
-<% content_for :content do %>
 <div id="main-wrapper" class="container">
 
-    <div class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb"><span class="trail-begin"><a href="http://fullridecentral.com" title="Full Ride Central" rel="home" class="trail-begin">Home</a></span> <span class="sep">&raquo;</span> <span class="trail-end">My Profile</span></div><div class="tc-hot-crumble container" role="navigation"><div class="row"><div class="span12"></div></div></div>    
+    <div class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb"><span class="trail-begin"><a href="http://fullridecentral.com" title="Full Ride Central" rel="home" class="trail-begin">Home</a></span> <span class="sep">&raquo;</span> <span class="trail-end">About</span></div><div class="tc-hot-crumble container" role="navigation"><div class="row"><div class="span12"></div></div></div>    
     <div class="container" role="main">
         <div class="row">
 
@@ -18,16 +16,16 @@
                     
                         
                                                                                     
-                                                                    <article id="page-24" class="post-24 page type-page status-publish hentry row-fluid">
+                                                                    <article id="page-7" class="post-7 page type-page status-publish hentry row-fluid">
                                         
         <header class="entry-header">
           
-          <h1 class="entry-title format-icon">My Profile  </h1><hr class="featurette-divider __before_content">
+          <h1 class="entry-title format-icon">About  </h1><hr class="featurette-divider __before_content">
         </header><!-- .entry-header -->
 
               
         <div class="entry-content">
-            <p>This page&#8217;s contents not yet dealt with.</p>
+        <%yield(:article)%>
         </div>
 
                                             </article>
@@ -43,4 +41,3 @@
 
     
 </div><!--#main-wrapper"-->
-<% end %>
