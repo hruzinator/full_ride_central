@@ -3,6 +3,15 @@
 <% provide(:article_title, 'Scholarships') %>
 
 <%content_for :article do %>
-  <p>This page is incomplete.</p>
+  <div class="div-search">
+  	<h3> Search </h3>
+  	<form name="search-form">
+  		<input type="search" name="search">
+  		<input value="Search" type="submit" name="submit-search">
+  	</form>
+  </div> <!--.div-search-->
+  <div class="div-search-results">
+  	<!-- TODO render search results (not done in view. Should go without saying but I would be the type to do it) -->
+  </div> <!--.div-search-results-->
 <% end %>
 <%= render template: "layouts/article" %>
