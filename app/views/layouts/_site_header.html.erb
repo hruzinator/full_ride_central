@@ -1,6 +1,6 @@
 <header class="tc-header clearfix row-fluid" role="banner">			
 	<div class="brand span3 pull-left">
-	     <h1><a class="site-title" href="http://fullridecentral.com/" title="Full Ride Central | Search for full ride and full tuition academic scholarships.">Full Ride Central</a></h1>
+	     <h1><%= link_to('Full Ride Central', '/pages/home', class:"site-title", title:"Full Ride Central | Search for full ride and full tuition academic scholarships.")%></h1>
 	</div> <!-- brand span3 pull-left -->
 
 	<div class="container outside"><h2 class="site-description">Search for full ride and full tuition academic scholarships.</h2></div>
@@ -14,11 +14,13 @@
                         <h2 class="span7 inside site-description">Search for full ride and full tuition academic scholarships.</h2><div class="nav-collapse collapse tc-hover-menu-wrapper">
                               <div class="menu-main-menu-container">
                                     <ul id="menu-main-menu" class="nav tc-hover-menu">
-                                          <li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-18"><a href="http://fullridecentral.com/" >Home</a></li>
-                                          <li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="http://fullridecentral.com/about/" >About</a></li>
-                                          <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="http://fullridecentral.com/scholarships/" >Scholarships</a></li>
-                                          <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="http://fullridecentral.com/profile/" >My Profile</a></li>
-                                          <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="http://fullridecentral.com/contact/" >Contact Us</a></li>
+                                          <li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-18">
+                                                <%= link_to('Home','home')%>
+                                          </li>
+                                          <li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><%= link_to('About','about')%></li>
+                                          <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><%= link_to('Scholarships','scholarships')%></li>
+                                          <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><%=link_to('My Profile', 'profile')%></li>
+                                          <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><%= link_to('Contact Us','contact')%></li>
                                     </ul>
                               </div>
                         </div>
