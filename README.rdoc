@@ -1,28 +1,32 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The source code for Full Ride Central, a collaborative project between Josh 
+Hinchie and Matthew Hruz. Please note that the project is still in development
+and will have plenty of bugs. You can visit the future site at 
+www.fullridecentral.com. Note that the current version of the site is a layout 
+only and has no functionality (yet). It is not linked to this project and will 
+be replaced by the code from this project on a future date.
 
-Things you may want to cover:
+This is a Ruby on Rails project, so setup is just like any other Rails setup.
+Those who are unfamiliar with the Rails framework can access these resouces 
+for more information:
 
-* Ruby version
+* http://guides.rubyonrails.org/getting_started.html
 
-* System dependencies
+* http://ruby.railstutorial.org/
 
-* Configuration
+= Specs and gems for this project:
 
-* Database creation
+* Ruby version: 1.9.3
 
-* Database initialization
+* Rails version: 4.0.2
 
-* How to run the test suite
+* Using RSpec for testing
 
-* Services (job queues, cache servers, search engines, etc.)
+= TODO
 
-* Deployment instructions
+* The controllers and models still haven't been touched yet
 
-* ...
+* Create an interface for creating, viewing, and modifying database items.
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Add a search engine for the database
