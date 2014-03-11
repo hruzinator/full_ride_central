@@ -1,4 +1,7 @@
-<% provide(:title, 'Full Ride Central | Add Scholarship') %>
-<%content_for :content do %>
 
+<% provide(:title, 'Full Ride Central | Add Scholarship') %>
+<% provide (:article_title, 'Welcome Admin!') %>
+<%content_for :article do %>
+	<%= link_to "Add Scholarship!", '#', class: "btn btn-large btn-primary" %>
 <% end %>
+<%= render template: "layouts/article" %>

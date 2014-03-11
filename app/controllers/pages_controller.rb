@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+
   def about
   end
 
@@ -12,5 +13,8 @@ class PagesController < ApplicationController
   end
 
   def scholarships
+  end
+
+  def add_scholarship
   end
 end

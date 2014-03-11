@@ -5,12 +5,14 @@ FullRideCentral::Application.routes.draw do
   get "pages/home"
   get "pages/profile"
   get "pages/scholarships"
+  get "pages/add_scholarship"
   get "page_controller/about"
   get "page_controller/contact"
   get "page_controller/home"
   get "page_controller/main"
   get "page_controller/profile"
   get "page_controller/scholarships"
+  get "page_controller/add_scholarship"
   root 'pages#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
