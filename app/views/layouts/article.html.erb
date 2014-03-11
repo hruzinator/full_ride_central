@@ -2,7 +2,7 @@
 <%content_for :content do %>
 	<div id="main-wrapper" class="container">
 
-    <div class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb"><span class="trail-begin"><a href="http://fullridecentral.com" title="Full Ride Central" rel="home" class="trail-begin">Home</a></span> <span class="sep">&raquo;</span> <span class="trail-end">Contact Us</span></div><div class="tc-hot-crumble container" role="navigation"><div class="row"><div class="span12"></div></div></div>    
+    <div class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb"><span class="trail-begin"><%= link_to('Home', '/pages/home', title:"Full Ride Central", rel:"home", class:"trail-begin")%></span> <span class="sep">&raquo;</span> <span class="trail-end"><%= yield(:article_title)%></span></div><div class="tc-hot-crumble container" role="navigation"><div class="row"><div class="span12"></div></div></div>    
     <div class="container" role="main">
         <div class="row">
 
